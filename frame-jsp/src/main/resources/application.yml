@@ -1,0 +1,26 @@
+spring:
+  application:
+    # 项目名称
+    name: frame-jsp
+  mvc:
+    # SpringBoot视图配置
+    view:
+      prefix: /WEB-INF
+      suffix: .jsp
+    # 静态文件访问位置
+    static-path-pattern: /static/**
+
+  # thymeleaf 模板引擎配置
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML
+
+server:
+  # 项目访问端口
+  port: 8090
+  servlet:
+    # 项目访问名称,不配置直接直接访问bean
+    context-path: /frame-jsp
